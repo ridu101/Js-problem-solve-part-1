@@ -1,0 +1,29 @@
+
+// sum of even and calculate the average of those values
+
+function sumofEven(numbers){
+    const evenNumbers=[];
+    for (const number of numbers){
+        if(number%2===0){
+            
+            evenNumbers.push(number);
+        }
+    }
+    console.log('The even numbers in given array:',evenNumbers);
+    let sum=0;
+    for( const number of evenNumbers){
+        sum= sum+number;
+
+    }
+
+    const count= evenNumbers.length;
+    console.log('The total even number count is:', count);
+    let avg= sum/count;
+    return avg;
+
+
+}
+
+const numbers= [20,21,25,16,1,4,18,28];
+const avg= sumofEven(numbers);
+console.log('The average of all even numbers is:', avg )
