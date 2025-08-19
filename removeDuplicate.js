@@ -11,6 +11,7 @@ function removeDuplicate(array){
 
 }
 
-const value= ['abul', 'babul', 'cabul', 'kabul', 'abul', 'babul'];
+// const value= ['abul', 'babul', 'cabul', 'kabul', 'abul', 'babul'];
+const value=[2,5,4,8,7,2,1,5,7,9,5];
 const result= removeDuplicate(value);
 console.log(result);
